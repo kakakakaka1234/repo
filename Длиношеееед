@@ -1,0 +1,13 @@
+s = input().lower()
+
+max_count = 0
+
+unique_chars = set(s)
+
+for ch in unique_chars:
+    current_count = s.count(ch)
+
+    if current_count > max_count:
+        max_count = current_count
+
+print(max_count)
