@@ -1,0 +1,29 @@
+n = int(input())
+
+for _ in range(n):
+    cubes_row = list(map(int, input().split()))
+
+    left = 0
+    right = len(cubes_row) - 1
+
+    prev_height = float('inf')
+
+    result = []
+
+    while left <= right:
+        if cubes_row[left] <= cubes_row[right]:
+            next_cube = cubes_row[left]
+            left += 1
+        else:
+            next_cube = cubes_row[right]
+            right -= 1
+        if next_cube > prev_height:
+            break
+
+        result.append(next_cube)
+        prev_height = next_cube
+
+    if len(result) == len(cubes_row):
+        print(*result)
+    else:
+        print("НЕТ")
