@@ -1,0 +1,13 @@
+numbers = list(map(float, input().split()))
+
+mean_value = sum(numbers) / len(numbers)
+
+sorted_numbers = sorted(numbers)
+
+if len(sorted_numbers) % 2 == 1:
+    median_value = sorted_numbers[len(sorted_numbers) // 2]
+else:
+    mid = len(sorted_numbers) // 2
+    median_value = (sorted_numbers[mid - 1] + sorted_numbers[mid]) / 2
+
+print(f"{mean_value:.1f} {median_value:.1f}")
