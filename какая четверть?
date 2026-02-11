@@ -1,9 +1,9 @@
 def quarter(xcoord, ycoord):
     if xcoord > 0 and ycoord > 0:
-        print("I четверть")
+        print("1 четверть")
     elif xcoord < 0 and ycoord > 0:
-        print("II четверть")
+        print("2 четверть")
     elif xcoord < 0 and ycoord < 0:
-        print("III четверть")
+        print("3 четверть")
     elif xcoord > 0 and ycoord < 0:
-        print("IV четверть")
+        print("4 четверть")
