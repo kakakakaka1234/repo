@@ -1,0 +1,8 @@
+def print_shrug_smile():
+    print("\\ ( ) /")
+
+def print_kthuhu_smile():
+    print("{ :€ }")
+
+def print_happy_smile():
+    print("( ° 5 )")
