@@ -1,0 +1,5 @@
+def golden_ratio(i):
+    a, b = 1, 1
+    for _ in range(i):
+        a, b = b, a + b
+    print(a / b)
