@@ -1,0 +1,8 @@
+def parrot(phrase):
+    if not hasattr(parrot, "phrases"):
+        parrot.phrases = set()
+    
+    if phrase in parrot.phrases:
+        print(phrase)
+    else:
+        parrot.phrases.add(phrase)
