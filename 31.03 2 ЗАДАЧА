@@ -1,0 +1,24 @@
+# Класс Car (Автомобиль)
+class Car:
+    def move(self):
+        return "Автомобиль едет по дороге."
+
+# Класс Bicycle (Велосипед)
+class Bicycle:
+    def move(self):
+        return "Велосипед катится по дорожке."
+
+# Функция для обработки списка транспортных средств
+def describe_movement(transports):
+    for transport in transports:
+        print(transport.move())
+
+# Создание объектов транспортных средств
+car = Car()
+bike = Bicycle()
+
+# Список транспортных средств
+transports_list = [car, bike]
+
+# Вызов функции для описания движения
+describe_movement(transports_list)
