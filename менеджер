@@ -1,0 +1,24 @@
+# Класс Developer (Разработчик)
+class Developer:
+    def work(self):
+        return "Разработчик пишет код."
+
+# Класс Manager (Менеджер)
+class Manager:
+    def work(self):
+        return "Менеджер управляет проектами."
+
+# Функция для отображения результата работы сотрудников
+def show_work_results(employees):
+    for employee in employees:
+        print(employee.work())
+
+# Создание экземпляров сотрудников
+dev = Developer()
+mgr = Manager()
+
+# Список сотрудников
+employees_list = [dev, mgr]
+
+# Вызов функции для отображения результатов работы
+show_work_results(employees_list)
